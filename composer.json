@@ -1,0 +1,48 @@
+{
+  "name": "anuarhdz/craft-builder",
+  "description": "Create fields, entry types, and sections in JSON format. You can also create entries in bulk for your demo content.",
+  "type": "craft-plugin",
+  "license": "mit",
+  "support": {
+    "email": "anuar@hey.com",
+    "issues": "https://github.com/anuarhdz/craft-builder/issues?state=open",
+    "source": "https://github.com/anuarhdz/craft-builder",
+    "docs": "https://github.com/anuarhdz/craft-builder",
+    "rss": "https://github.com/anuarhdz/craft-builder/releases.atom"
+  },
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "^5.7.0"
+  },
+  "require-dev": {
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "anuarhdz\\builder\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "builder",
+    "name": "Builder",
+    "developer": "Anuar Reyes",
+    "documentationUrl": "https://github.com/anuarhdz/craft-builder",
+    "class": "anuarhdz\\builder\\Builder"
+  },
+  "scripts": {
+    "check-cs": "ecs check --ansi",
+    "fix-cs": "ecs check --ansi --fix",
+    "phpstan": "phpstan --memory-limit=1G"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
