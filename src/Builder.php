@@ -27,6 +27,11 @@ class Builder extends Plugin
             "components" => [
                 // Define component configs here...
             ],
+            // "settings" => [
+            //     "structureJson" => [
+            //         "type" => \craft\fields\Json::class,
+            //     ],
+            // ],
         ];
     }
 
